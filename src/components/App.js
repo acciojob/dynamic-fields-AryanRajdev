@@ -25,7 +25,9 @@ const App = () => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(obj);
+    const formdata = obj.map(({name,age})=> ({name,age}));
+
+    console.log(formdata);
   }
 
   function addTask() {
